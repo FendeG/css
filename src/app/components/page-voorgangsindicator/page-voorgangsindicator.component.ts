@@ -8,31 +8,20 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angula
 export class PageVoorgangsindicatorComponent implements OnInit,AfterViewInit {
 
   height:number;
+  n:number;
   @ViewChild('articleId') articleId: ElementRef;
-  // @ViewChild('progressBar') progressBar: ElementRef;
 
-  // article;
   constructor() { }
 
   ngOnInit(): void {
     window.addEventListener('scroll', (event) => this.onScroll());
-    
-    // this.article = document.querySelector('js-article');
-
   }
 
 
   onScroll(){
-    console.log('scroll');
-    // document.querySelector('progress-bar').getElementsByClassName 
-    // console.log(this.article.nativeElement.);
-    console.log('offsetHeight : ' + document.querySelector('article').offsetHeight )
-    // console.log('js-article : ' + document.querySelector('js-article').offsetHeight )
-    // ßconsole.log('offsetHeight : ' + this.article.offsetHeight);
-    // console.log('-> ' + this.onGetPercentage());
-    // this.progressBar.style.width = this.onGetPercentage(); + '%'
+    // console.log('offsetHeight : ' + document.querySelector('article').offsetHeight )
     this.height = Math.round(this.onGetPercentage());
-    console.log('height : ' + this.height);
+    // console.log('height : ' + this.height);
   }
 
   onGetHeight(){
@@ -43,6 +32,7 @@ export class PageVoorgangsindicatorComponent implements OnInit,AfterViewInit {
      return window.innerHeight - ( this.articleId.nativeElement.offsetTop - window.scrollY )
    }
    onGetPercentage(){
+     this.n = this.articleId.nativeElement.offsetTop;
      return (this.onGetValue() / this.onGetHeight()) * 100
    }
 
