@@ -9,6 +9,7 @@ import { BlurTextComponent } from './components/blur-text/blur-text.component';
 import { SlideinComponent } from './components/slidein/slidein.component';
 import { ParallaxscrollingComponent } from './components/parallaxscrolling/parallaxscrolling.component';
 import { Intro3Component } from './components/intro3/intro3.component';
+import { FlexLayoutComponent } from './components/flex-layout/flex-layout.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Intro3Component } from './components/intro3/intro3.component';
     BlurTextComponent,
     SlideinComponent,
     ParallaxscrollingComponent,
-    Intro3Component
+    Intro3Component,
+    FlexLayoutComponent
   ],
   imports: [
     BrowserModule,

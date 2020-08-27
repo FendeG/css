@@ -7,6 +7,7 @@ import { BlurTextComponent } from './components/blur-text/blur-text.component';
 import { SlideinComponent } from './components/slidein/slidein.component';
 import { ParallaxscrollingComponent } from './components/parallaxscrolling/parallaxscrolling.component';
 import { Intro3Component } from './components/intro3/intro3.component';
+import { FlexLayoutComponent } from './components/flex-layout/flex-layout.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'slidein', component: SlideinComponent },
   { path: 'parscrolling', component: ParallaxscrollingComponent },
   { path: 'intro3', component: Intro3Component },
+  { path: 'flex1', component: FlexLayoutComponent },
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`
  { path: '**', component: LeaningCardEffectComponent },
