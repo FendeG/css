@@ -1,0 +1,29 @@
+.box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box::after,
+.box::before{
+    position: absolute;
+    content:'';
+    width: 150px;
+    height: 150px;
+    background-color: hotpink;
+    bottom: 0;
+    border:1px solid black;
+}
+
+.box::before{
+    right: 50%;
+    transform: skew(0, 20deg);
+}
+
+.box::after{
+    left:50%;
+    transform:skew(0, -20deg)
+}

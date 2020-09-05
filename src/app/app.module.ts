@@ -16,6 +16,7 @@ import { FlexDirectionsComponent } from './components/layout/flex-directions/fle
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InverhoudingComponent } from './components/object/inverhouding/inverhouding.component';
 import { CustomShapeComponent } from './components/background/custom-shape/custom-shape.component';
+import { CssBookComponent } from './components/object/css-book/css-book.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { CustomShapeComponent } from './components/background/custom-shape/custo
     FlexDirectionsComponent,
     DashboardComponent,
     InverhoudingComponent,
-    CustomShapeComponent
+    CustomShapeComponent,
+    CssBookComponent
   ],
   imports: [
     BrowserModule,
