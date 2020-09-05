@@ -14,6 +14,7 @@ import { FlexDirectionsComponent } from './components/layout/flex-directions/fle
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InverhoudingComponent } from './components/object/inverhouding/inverhouding.component';
+import { CustomShapeComponent } from './components/background/custom-shape/custom-shape.component';
 
 const routes: Routes = [
   { path: 'card', component: LeaningCardEffectComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'flexdirection', component: FlexDirectionsComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'verhouding', component: InverhoudingComponent },
+  { path: 'shape', component: CustomShapeComponent },
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`
  { path: '**', component: DashboardComponent },

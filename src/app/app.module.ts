@@ -15,6 +15,7 @@ import { FlexWrapComponent } from './components/layout/flex-wrap/flex-wrap.compo
 import { FlexDirectionsComponent } from './components/layout/flex-directions/flex-directions.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InverhoudingComponent } from './components/object/inverhouding/inverhouding.component';
+import { CustomShapeComponent } from './components/background/custom-shape/custom-shape.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { InverhoudingComponent } from './components/object/inverhouding/inverhou
     FlexWrapComponent,
     FlexDirectionsComponent,
     DashboardComponent,
-    InverhoudingComponent
+    InverhoudingComponent,
+    CustomShapeComponent
   ],
   imports: [
     BrowserModule,
