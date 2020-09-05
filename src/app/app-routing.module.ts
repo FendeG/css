@@ -16,6 +16,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InverhoudingComponent } from './components/object/inverhouding/inverhouding.component';
 import { CustomShapeComponent } from './components/background/custom-shape/custom-shape.component';
 import { CssBookComponent } from './components/object/css-book/css-book.component';
+import { GradientsBoxComponent } from './components/object/gradients-box/gradients-box.component';
+import { GradientsAnimatedComponent } from './components/object/gradients-animated/gradients-animated.component';
 
 
 const routes: Routes = [
@@ -32,6 +34,8 @@ const routes: Routes = [
   { path: 'verhouding', component: InverhoudingComponent },
   { path: 'shape', component: CustomShapeComponent },
   { path: 'cssbook', component: CssBookComponent },
+  { path: 'gradient-box', component: GradientsBoxComponent },
+  { path: 'gradientanimated', component: GradientsAnimatedComponent },
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`
  { path: '**', component: DashboardComponent },

@@ -17,6 +17,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InverhoudingComponent } from './components/object/inverhouding/inverhouding.component';
 import { CustomShapeComponent } from './components/background/custom-shape/custom-shape.component';
 import { CssBookComponent } from './components/object/css-book/css-book.component';
+import { GradientsBoxComponent } from './components/object/gradients-box/gradients-box.component';
+import { GradientsAnimatedComponent } from './components/object/gradients-animated/gradients-animated.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { CssBookComponent } from './components/object/css-book/css-book.componen
     DashboardComponent,
     InverhoudingComponent,
     CustomShapeComponent,
-    CssBookComponent
+    CssBookComponent,
+    GradientsBoxComponent,
+    GradientsAnimatedComponent
   ],
   imports: [
     BrowserModule,
