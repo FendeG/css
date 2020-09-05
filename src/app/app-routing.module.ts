@@ -9,6 +9,9 @@ import { ParallaxscrollingComponent } from './components/parallaxscrolling/paral
 import { Intro3Component } from './components/intro3/intro3.component';
 import { FlexLayoutComponent } from './components/flex-layout/flex-layout.component';
 
+import { FlexWrapComponent } from './components/layout/flex-wrap/flex-wrap.component';
+import { FlexDirectionsComponent } from './components/layout/flex-directions/flex-directions.component';
+
 
 const routes: Routes = [
   { path: 'card', component: LeaningCardEffectComponent },
@@ -18,6 +21,8 @@ const routes: Routes = [
   { path: 'parscrolling', component: ParallaxscrollingComponent },
   { path: 'intro3', component: Intro3Component },
   { path: 'flex1', component: FlexLayoutComponent },
+  { path: 'flexwrap', component: FlexWrapComponent },
+  { path: 'flexdirection', component: FlexDirectionsComponent },
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`
  { path: '**', component: LeaningCardEffectComponent },

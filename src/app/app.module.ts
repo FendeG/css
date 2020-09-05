@@ -10,6 +10,10 @@ import { SlideinComponent } from './components/slidein/slidein.component';
 import { ParallaxscrollingComponent } from './components/parallaxscrolling/parallaxscrolling.component';
 import { Intro3Component } from './components/intro3/intro3.component';
 import { FlexLayoutComponent } from './components/flex-layout/flex-layout.component';
+import { FwModule } from '../fw/fw.module';
+import { FlexWrapComponent } from './components/layout/flex-wrap/flex-wrap.component';
+import { FlexDirectionsComponent } from './components/layout/flex-directions/flex-directions.component';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +24,14 @@ import { FlexLayoutComponent } from './components/flex-layout/flex-layout.compon
     SlideinComponent,
     ParallaxscrollingComponent,
     Intro3Component,
-    FlexLayoutComponent
+    FlexLayoutComponent,
+    FlexWrapComponent,
+    FlexDirectionsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FwModule
   ],
   providers: [],
   bootstrap: [AppComponent]
