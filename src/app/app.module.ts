@@ -13,6 +13,7 @@ import { FlexLayoutComponent } from './components/flex-layout/flex-layout.compon
 import { FwModule } from '../fw/fw.module';
 import { FlexWrapComponent } from './components/layout/flex-wrap/flex-wrap.component';
 import { FlexDirectionsComponent } from './components/layout/flex-directions/flex-directions.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FlexDirectionsComponent } from './components/layout/flex-directions/fle
     Intro3Component,
     FlexLayoutComponent,
     FlexWrapComponent,
-    FlexDirectionsComponent
+    FlexDirectionsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

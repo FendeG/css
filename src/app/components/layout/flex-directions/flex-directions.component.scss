@@ -12,6 +12,13 @@
   align-items: center;
 
 }
+// .flexsub div{
+//     // max-width: 50%;
+//     justify-content: center;
+//     background-color: burlywood;
+
+// }
+
 .columns {
   display: flex;
   max-width: 2024px;
@@ -36,7 +43,8 @@
 }
 
 .text-opmaak {
-  padding: 20px
+  padding: 30px;
+  background-color: whitesmoke;
 }
 
 .text-center {
@@ -50,7 +58,7 @@
   height: auto;
   max-width: 100%;
   max-height: 100%;
- 
+  
 
 
 }
