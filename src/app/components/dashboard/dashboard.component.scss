@@ -1,83 +1,180 @@
-.flex-container{
+.flex-container {
 
-    display: flex;
-    justify-items: stretch;
-    justify-self: center;
-    align-content: center;
-    justify-content: space-around;
-    background-color: orange;
-    font-size: 20px;
-    height: 40px;
-    
-    
-    
-}
+  display: flex;
+  justify-items: stretch;
+  justify-self: center;
+  align-content: center;
+  justify-content: space-around;
+  background-color: orange;
+  font-size: 20px;
+  height: 40px;
 
-.flex-container div{
-    border:1px solid black;
-    min-width: 300px;
-    text-align: center;
-    color:white;
-    // height: 50%;
-    // justify-content: center;
-    background-color: orangered;
 
-    display: flex;
-    justify-content: center;
-    /* align-self: center;    <---- REMOVE */
-    align-items: center;   /* <---- NEW    */
-    
 
 }
 
-.flex-container div:hover{
-    background-color: red;
-    cursor: pointer;
+.flex-container div {
+  border: 1px solid black;
+  min-width: 300px;
+  text-align: center;
+  color: white;
+  // height: 50%;
+  // justify-content: center;
+  background-color: orangered;
+
+  display: flex;
+  justify-content: center;
+  /* align-self: center;    <---- REMOVE */
+  align-items: center;
+  /* <---- NEW    */
 
 
 }
-.flex-container ul{
-    text-decoration: none;
-    list-style:none;
+
+.flex-container div:hover {
+  background-color: red;
+  cursor: pointer;
+
+
+}
+
+.flex-container ul {
+  text-decoration: none;
+  list-style: none;
 }
 
 
-.flex-container a{
-    text-decoration: none;
-    list-style:none;
+.flex-container a {
+  text-decoration: none;
+  list-style: none;
 }
 
 
-/* *********** */
 
-.flex-menu{
+/* ****************************************************** */
+/* Hoofdmenu                                              */
+/* ****************************************************** */
 
-    display: flex;
-    justify-items: stretch;
-    justify-self: center;
-    align-content: center;
-    justify-content: space-around;
-    background-color: orange;
-    font-size: 20px;
-    height: 40px;
-    text-decoration: none;
-    list-style:none;
-    
+* {
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+.flex-menu {
+
+  display: flex;
+  justify-items: stretch;
+  justify-self: center;
+  align-content: center;
+  justify-content: space-around;
+  background-color: orange;
+  font-size: 20px;
+  height: 40px;
+  text-decoration: none;
+  list-style: none;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+
+
 }
 
 .flex-menu li {
- background-color: cadetblue;
- cursor: pointer;
- display: flex;
+  background-color: cadetblue;
+  cursor: pointer;
+  display: flex;
 
   // align-content: center;
- justify-content: center; /* horizontal center */
- align-items: center;   /*  vertical center   */
- min-width: 300px;
-
+  justify-content: center;
+  /* horizontal center */
+  align-items: center;
+  /*  vertical center   */
+  min-width: 300px;
+  padding: 10px;
 
 }
 
-.flex-menu li:hover{
-    background-color: chartreuse;
+.flex-menu li:hover {
+  background-color: chartreuse;
+}
+
+
+/* ****************************************************** */
+/* Submenu                                                */
+/* ****************************************************** */
+
+.flex-submenu {
+  // display: flex;
+  flex-direction: column;
+  background-color: green;
+  display: none;
+}
+
+// .flex-submenu > li:hover{
+//     display:block;
+//   color:#fff;
+//   padding-left:2rem;
+//   background-color: hotpink;
+// }
+nav ul ul {
+  display: none;
+
+}
+
+nav ul li:hover>ul {
+  display: block;
+  color: #fff;
+  padding-left: .2rem;
+}
+
+nav ul li:hover>ul {
+  padding-left: 0;
+  background: #777;
+}
+
+nav ul li:hover>ul a {
+  color: #fff;
+}
+
+.sub-menu {
+  li {
+    display: flex;
+    padding-right: 2em;
+  }
+
+  li:hover,
+  li a:hover {
+    background: #ddd;
+    color: #777;
+  }
+}
+
+nav ul ul ul {
+  margin: 0 0 0 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.menu-item-has-children .menu-item-has-children>a:after {
+  font-family: 'Genericons';
+  content: '\f431';
+  padding: 1px;
+  transform: rotate(-90deg);
+}
+
+
+
+
+// .flex-submenu ul{
+//     // visibility: hidden;
+//     // opacity: 0;
+//     // position: absolute;
+//     // transition: all 0.5s ease;
+//     // margin-top: 1rem;
+//     // left: 0;
+//     display: none;
+// }
+
+li {
+  display: block;
+  transition-duration: 0.5s;
 }

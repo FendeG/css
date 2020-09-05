@@ -13,6 +13,7 @@ import { FlexWrapComponent } from './components/layout/flex-wrap/flex-wrap.compo
 import { FlexDirectionsComponent } from './components/layout/flex-directions/flex-directions.component';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { InverhoudingComponent } from './components/object/inverhouding/inverhouding.component';
 
 const routes: Routes = [
   { path: 'card', component: LeaningCardEffectComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'flexwrap', component: FlexWrapComponent },
   { path: 'flexdirection', component: FlexDirectionsComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'verhouding', component: InverhoudingComponent },
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`
  { path: '**', component: DashboardComponent },

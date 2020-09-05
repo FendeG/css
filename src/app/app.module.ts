@@ -14,6 +14,7 @@ import { FwModule } from '../fw/fw.module';
 import { FlexWrapComponent } from './components/layout/flex-wrap/flex-wrap.component';
 import { FlexDirectionsComponent } from './components/layout/flex-directions/flex-directions.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { InverhoudingComponent } from './components/object/inverhouding/inverhouding.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     FlexLayoutComponent,
     FlexWrapComponent,
     FlexDirectionsComponent,
-    DashboardComponent
+    DashboardComponent,
+    InverhoudingComponent
   ],
   imports: [
     BrowserModule,
