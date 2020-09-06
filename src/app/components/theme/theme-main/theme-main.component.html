@@ -1,0 +1,26 @@
+<p>theme-main works!</p>
+
+<app-theme-header></app-theme-header>
+
+<main>
+    <p><a href="https://coryrylan.com/blog/theming-angular-apps-with-css-custom-properties">Blog Post</a></p>
+    <p><a href="https://stackblitz.com/edit/angular-irrsv8?file=src%2Fapp%2Fcard%2Fcard.component.html" target="_blank">Source</a></p>
+    <p><a href="https://coryrylan.com/blog/theming-angular-apps-with-css-custom-properties" target="_blank">Uitleg</a></p>
+  
+
+    
+    <section>
+      <app-theme-card>
+        Card 1
+      </app-theme-card>
+      <app-theme-card>
+        Card 2
+      </app-theme-card>
+      <app-theme-card>
+        Card 3
+      </app-theme-card>
+    </section>
+  
+    <label for="darkTheme">Dark Theme</label>
+    <input id="darkTheme" type="checkbox" [formControl]="darkTheme">
+  </main>

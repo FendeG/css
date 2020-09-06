@@ -18,6 +18,7 @@ import { CustomShapeComponent } from './components/background/custom-shape/custo
 import { CssBookComponent } from './components/object/css-book/css-book.component';
 import { GradientsBoxComponent } from './components/object/gradients-box/gradients-box.component';
 import { GradientsAnimatedComponent } from './components/object/gradients-animated/gradients-animated.component';
+import { ThemeMainComponent } from './components/theme/theme-main/theme-main.component';
 
 
 const routes: Routes = [
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'cssbook', component: CssBookComponent },
   { path: 'gradient-box', component: GradientsBoxComponent },
   { path: 'gradientanimated', component: GradientsAnimatedComponent },
+  { path: 'theme', component: ThemeMainComponent },
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`
  { path: '**', component: DashboardComponent },

@@ -20,6 +20,11 @@ import { CssBookComponent } from './components/object/css-book/css-book.componen
 import { GradientsBoxComponent } from './components/object/gradients-box/gradients-box.component';
 import { GradientsAnimatedComponent } from './components/object/gradients-animated/gradients-animated.component';
 
+import {ThemeService} from './services/theme.service';
+import { ThemeMainComponent } from './components/theme/theme-main/theme-main.component';
+import { ThemeHeaderComponent } from './components/theme/theme-header/theme-header.component';
+import { ThemeCardComponent } from './components/theme/theme-card/theme-card.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,14 +43,20 @@ import { GradientsAnimatedComponent } from './components/object/gradients-animat
     CustomShapeComponent,
     CssBookComponent,
     GradientsBoxComponent,
-    GradientsAnimatedComponent
+    GradientsAnimatedComponent,
+    ThemeMainComponent,
+    ThemeHeaderComponent,
+    ThemeCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FwModule
   ],
-  providers: [],
+  providers: [
+    ThemeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
