@@ -25,6 +25,8 @@ import { ThemeMainComponent } from './components/theme/theme-main/theme-main.com
 import { ThemeHeaderComponent } from './components/theme/theme-header/theme-header.component';
 import { ThemeCardComponent } from './components/theme/theme-card/theme-card.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AnimateJsComponent } from './components/animation/animate-js/animate-js.component';
+import { AnimistaComponent } from './components/animation/animista/animista.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     GradientsAnimatedComponent,
     ThemeMainComponent,
     ThemeHeaderComponent,
-    ThemeCardComponent
+    ThemeCardComponent,
+    AnimateJsComponent,
+    AnimistaComponent
   ],
   imports: [
     BrowserModule,

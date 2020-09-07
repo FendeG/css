@@ -19,6 +19,8 @@ import { CssBookComponent } from './components/object/css-book/css-book.componen
 import { GradientsBoxComponent } from './components/object/gradients-box/gradients-box.component';
 import { GradientsAnimatedComponent } from './components/object/gradients-animated/gradients-animated.component';
 import { ThemeMainComponent } from './components/theme/theme-main/theme-main.component';
+import { AnimateJsComponent } from './components/animation/animate-js/animate-js.component';
+import { AnimistaComponent } from './components/animation/animista/animista.component';
 
 
 const routes: Routes = [
@@ -38,6 +40,8 @@ const routes: Routes = [
   { path: 'gradient-box', component: GradientsBoxComponent },
   { path: 'gradientanimated', component: GradientsAnimatedComponent },
   { path: 'theme', component: ThemeMainComponent },
+  { path: 'animate-js', component: AnimateJsComponent },
+  { path: 'animista', component: AnimistaComponent },
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`
  { path: '**', component: DashboardComponent },
