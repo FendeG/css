@@ -27,6 +27,10 @@ import { ThemeCardComponent } from './components/theme/theme-card/theme-card.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { AnimateJsComponent } from './components/animation/animate-js/animate-js.component';
 import { AnimistaComponent } from './components/animation/animista/animista.component';
+import { MorphTekstinhoudComponent } from './components/morph-tekstinhoud/morph-tekstinhoud.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { MistTekstComponent } from './components/mist-tekst/mist-tekst.component';
 
 @NgModule({
   declarations: [
@@ -50,16 +54,18 @@ import { AnimistaComponent } from './components/animation/animista/animista.comp
     ThemeHeaderComponent,
     ThemeCardComponent,
     AnimateJsComponent,
-    AnimistaComponent
+    AnimistaComponent,
+    MorphTekstinhoudComponent,
+    MistTekstComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FwModule
+    FwModule,
   ],
   providers: [
-    ThemeService
+    ThemeService,
   ],
   bootstrap: [AppComponent]
 })

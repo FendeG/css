@@ -21,6 +21,8 @@ import { GradientsAnimatedComponent } from './components/object/gradients-animat
 import { ThemeMainComponent } from './components/theme/theme-main/theme-main.component';
 import { AnimateJsComponent } from './components/animation/animate-js/animate-js.component';
 import { AnimistaComponent } from './components/animation/animista/animista.component';
+import { MorphTekstinhoudComponent } from './components/morph-tekstinhoud/morph-tekstinhoud.component';
+import { MistTekstComponent } from './components/mist-tekst/mist-tekst.component';
 
 
 const routes: Routes = [
@@ -42,9 +44,11 @@ const routes: Routes = [
   { path: 'theme', component: ThemeMainComponent },
   { path: 'animate-js', component: AnimateJsComponent },
   { path: 'animista', component: AnimistaComponent },
+  { path: 'morph-tekst', component: MorphTekstinhoudComponent },
+  { path: 'mist-tekst', component: MistTekstComponent },
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`
- { path: '**', component: DashboardComponent },
+  { path: '**', component: DashboardComponent },
 
 ];
 
