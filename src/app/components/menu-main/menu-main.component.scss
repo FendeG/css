@@ -1,0 +1,39 @@
+.menu {
+  display: flex;
+  justify-items: stretch;
+  justify-self: center;
+  align-content: center;
+  justify-content: space-around;
+  background-color: orange;
+  font-size: 20px;
+  height: 40px;
+  //   position: absolute;
+
+}
+
+.menu div {
+  border: 1px solid black;
+  min-width: 300px;
+  text-align: center;
+  color: white;
+  // height: 50%;
+  // justify-content: center;
+  background-color: orangered;
+
+  display: flex;
+  justify-content: center;
+  /* align-self: center;    <---- REMOVE */
+  align-items: center;
+  /* <---- NEW    */
+
+
+}
+
+.menu div:hover {
+  background-color: red;
+  cursor: pointer;
+
+}
+
+
+

@@ -1,0 +1,30 @@
+<nav role="navigation">
+  <ul>
+    <li *ngFor="let menu of menus">
+      <a href="#" [routerLink]="menu.route">{{menu.text}}</a>
+
+
+      <ul class="dropdown" aria-label="submenu">
+        <li *ngFor="let sub of menu.subs">
+          <a [routerLink]="[sub.route]">{{sub.text}}</a>
+        </li>
+
+      </ul>
+    </li>
+
+
+
+    <li><a href="#">One</a></li>
+
+    <li><a href="#" aria-haspopup="true">Two</a>
+      <ul class="dropdown" aria-label="submenu">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#">Three</a></li>
+
+  </ul>
+</nav>

@@ -31,6 +31,9 @@ import { MorphTekstinhoudComponent } from './components/morph-tekstinhoud/morph-
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MistTekstComponent } from './components/mist-tekst/mist-tekst.component';
+import { MenuMainComponent } from './components/menu-main/menu-main.component';
+import { MenuSubComponent } from './components/menu-main/menu-sub/menu-sub.component';
+import { MenuMainOrangeComponent } from './components/menu-main-orange/menu-main-orange.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,10 @@ import { MistTekstComponent } from './components/mist-tekst/mist-tekst.component
     AnimateJsComponent,
     AnimistaComponent,
     MorphTekstinhoudComponent,
-    MistTekstComponent
+    MistTekstComponent,
+    MenuMainComponent,
+    MenuSubComponent,
+    MenuMainOrangeComponent
   ],
   imports: [
     BrowserModule,

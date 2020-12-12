@@ -1,0 +1,26 @@
+<div class="menu">
+  <div *ngFor="let menu of menus"
+  (mouseleave)="onMouseLeave()"
+  (mouseenter)="onMouseEnter()"
+
+  >
+    {{ menu.text }} 
+    <app-menu-sub
+    [items]="menu.subs"
+    >
+
+    </app-menu-sub>
+    <!-- <div class="menu-sub" *ngFor="let sub of menu.subs">
+        {{ sub | json }}
+    </div> -->
+  </div>
+
+
+</div>
+
+
+<!-- [style.left.x]="popupLeft()"
+[style.left.y]="popupTop()" -->
+
+
+
