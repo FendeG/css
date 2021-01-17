@@ -34,6 +34,7 @@ import { MistTekstComponent } from './components/mist-tekst/mist-tekst.component
 import { MenuMainComponent } from './components/menu-main/menu-main.component';
 import { MenuSubComponent } from './components/menu-main/menu-sub/menu-sub.component';
 import { MenuMainOrangeComponent } from './components/menu-main-orange/menu-main-orange.component';
+import { CustumSelectMenuComponent } from './components/custum-select-menu/custum-select-menu.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { MenuMainOrangeComponent } from './components/menu-main-orange/menu-main
     MistTekstComponent,
     MenuMainComponent,
     MenuSubComponent,
-    MenuMainOrangeComponent
+    MenuMainOrangeComponent,
+    CustumSelectMenuComponent
   ],
   imports: [
     BrowserModule,

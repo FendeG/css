@@ -30,8 +30,7 @@ export class MenuMainOrangeComponent implements OnInit {
           { text: 'animista', route: '/animista', subs: null, icon: null },
           { text: 'morph-tekst', route: '/morph-tekst', subs: null, icon: null },
           { text: 'mist-tekst', route: '/mist-tekst', subs: null, icon: null },
-
-          
+          { text: 'custom-select-menu', route: '/custom-select-menu', subs: null, icon: null },
 
         ]
       },
