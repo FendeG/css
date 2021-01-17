@@ -25,6 +25,8 @@ import { MorphTekstinhoudComponent } from './components/morph-tekstinhoud/morph-
 import { MistTekstComponent } from './components/mist-tekst/mist-tekst.component';
 
 import { CustumSelectMenuComponent } from './components/custum-select-menu/custum-select-menu.component';
+import { TriangelBordersMixinComponent } from './components/triangel-borders-mixin/triangel-borders-mixin.component';
+import { FlexboxDesignPatternsComponent } from './components/flexbox-design-patterns/flexbox-design-patterns.component';
 
 
 const routes: Routes = [
@@ -49,8 +51,11 @@ const routes: Routes = [
   { path: 'morph-tekst', component: MorphTekstinhoudComponent },
   { path: 'mist-tekst', component: MistTekstComponent },
   { path: 'custom-select-menu', component: CustumSelectMenuComponent },
+  { path: 'TriangelBordersMixinComponent', component: TriangelBordersMixinComponent },
+  { path: 'FlexboxDesignPatternsComponent', component: FlexboxDesignPatternsComponent },
 
 
+  
   
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`

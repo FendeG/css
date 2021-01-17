@@ -35,6 +35,8 @@ import { MenuMainComponent } from './components/menu-main/menu-main.component';
 import { MenuSubComponent } from './components/menu-main/menu-sub/menu-sub.component';
 import { MenuMainOrangeComponent } from './components/menu-main-orange/menu-main-orange.component';
 import { CustumSelectMenuComponent } from './components/custum-select-menu/custum-select-menu.component';
+import { TriangelBordersMixinComponent } from './components/triangel-borders-mixin/triangel-borders-mixin.component';
+import { FlexboxDesignPatternsComponent } from './components/flexbox-design-patterns/flexbox-design-patterns.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { CustumSelectMenuComponent } from './components/custum-select-menu/custu
     MenuMainComponent,
     MenuSubComponent,
     MenuMainOrangeComponent,
-    CustumSelectMenuComponent
+    CustumSelectMenuComponent,
+    TriangelBordersMixinComponent,
+    FlexboxDesignPatternsComponent
   ],
   imports: [
     BrowserModule,
