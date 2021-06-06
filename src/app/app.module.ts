@@ -31,8 +31,17 @@ import { MorphTekstinhoudComponent } from './components/morph-tekstinhoud/morph-
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MistTekstComponent } from './components/mist-tekst/mist-tekst.component';
+<<<<<<< HEAD
 import {MenuMainOrangeComponent} from './components/menu-main-orange/menu-main-orange.component';
 // feature modules
+=======
+import { MenuMainComponent } from './components/menu-main/menu-main.component';
+import { MenuSubComponent } from './components/menu-main/menu-sub/menu-sub.component';
+import { MenuMainOrangeComponent } from './components/menu-main-orange/menu-main-orange.component';
+import { CustumSelectMenuComponent } from './components/custum-select-menu/custum-select-menu.component';
+import { TriangelBordersMixinComponent } from './components/triangel-borders-mixin/triangel-borders-mixin.component';
+import { FlexboxDesignPatternsComponent } from './components/flexbox-design-patterns/flexbox-design-patterns.component';
+>>>>>>> 3e061574a8ee6d4c8ae1bb228515ede6a6dd0335
 
 @NgModule({
   declarations: [
@@ -59,7 +68,16 @@ import {MenuMainOrangeComponent} from './components/menu-main-orange/menu-main-o
     AnimistaComponent,
     MorphTekstinhoudComponent,
     MistTekstComponent,
+<<<<<<< HEAD
     MenuMainOrangeComponent
+=======
+    MenuMainComponent,
+    MenuSubComponent,
+    MenuMainOrangeComponent,
+    CustumSelectMenuComponent,
+    TriangelBordersMixinComponent,
+    FlexboxDesignPatternsComponent
+>>>>>>> 3e061574a8ee6d4c8ae1bb228515ede6a6dd0335
   ],
   imports: [
     BrowserModule,

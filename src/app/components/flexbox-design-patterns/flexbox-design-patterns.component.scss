@@ -1,0 +1,101 @@
+.even-columns {
+  display: flex;
+  gap:1em;      // works not in safari
+}
+
+.even-columns>* {
+  flex-basis: 100%; // all columns even width, niet afhankelijk van de inhoud
+}
+
+.grid-ish {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.grid-ish>* {
+  flex: 1 1 10em; // grow shrink flex-basis
+}
+
+.content-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1em;      // works not in safari
+
+
+}
+
+.content-sidebar>*:nth-child(1) {
+  flex: 1 1 70%;
+  min-width: 30ch; // overwrite flex shrink grow, ch : past zicht aan de font-size
+
+}
+
+.content-sidebar>*:nth-child(2) {
+  flex: 1 1 30%;
+  min-width: 15ch; // overwrite flex shrink grow
+
+
+}
+
+:root {
+  --ff-primary: basic-sans, sans-serif;
+  --clr-primary: #ee6352;
+  --clr--body: #333;
+  --clr-bg: #ddd;
+  --spacer: 1rem;
+  --flow-space: 2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.flow>*+* {
+  margin-top: var(--flow-space), var(--spacer);
+}
+
+
+.wrapper {
+  font-family: var(--ff-primary);
+  min-height: 100vh;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr--body);
+  background: var(--clr-bg);
+
+}
+
+a {
+  color: var(--clr-primary)
+}
+
+.content {
+  width: 70vw;
+  margin: 3rem auto;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0, 0, 0, .5);
+  background: white;
+}
+
+
+.col {
+  padding: 3em;
+  background: rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-weight: 900;
+  color: var(--clr-primary);
+}

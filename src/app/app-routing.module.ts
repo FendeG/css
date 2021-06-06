@@ -24,6 +24,10 @@ import { AnimistaComponent } from './components/animation/animista/animista.comp
 import { MorphTekstinhoudComponent } from './components/morph-tekstinhoud/morph-tekstinhoud.component';
 import { MistTekstComponent } from './components/mist-tekst/mist-tekst.component';
 
+import { CustumSelectMenuComponent } from './components/custum-select-menu/custum-select-menu.component';
+import { TriangelBordersMixinComponent } from './components/triangel-borders-mixin/triangel-borders-mixin.component';
+import { FlexboxDesignPatternsComponent } from './components/flexbox-design-patterns/flexbox-design-patterns.component';
+
 
 const routes: Routes = [
   { path: 'card', component: LeaningCardEffectComponent },
@@ -46,6 +50,13 @@ const routes: Routes = [
   { path: 'animista', component: AnimistaComponent },
   { path: 'morph-tekst', component: MorphTekstinhoudComponent },
   { path: 'mist-tekst', component: MistTekstComponent },
+  { path: 'custom-select-menu', component: CustumSelectMenuComponent },
+  { path: 'TriangelBordersMixinComponent', component: TriangelBordersMixinComponent },
+  { path: 'FlexboxDesignPatternsComponent', component: FlexboxDesignPatternsComponent },
+
+
+  
+  
 
   { path: '',   redirectTo: '/dashboard', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: DashboardComponent },

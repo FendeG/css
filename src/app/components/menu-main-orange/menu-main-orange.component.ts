@@ -30,8 +30,9 @@ export class MenuMainOrangeComponent implements OnInit {
           { text: 'animista', route: '/animista', subs: null, icon: null },
           { text: 'morph-tekst', route: '/morph-tekst', subs: null, icon: null },
           { text: 'mist-tekst', route: '/mist-tekst', subs: null, icon: null },
-
-          
+          { text: 'custom-select-menu', route: '/custom-select-menu', subs: null, icon: null },
+          { text: 'TriangelBordersMixinComponent', route: '/TriangelBordersMixinComponent', subs: null, icon: null },
+          { text: 'FlexboxDesignPatternsComponent', route: '/FlexboxDesignPatternsComponent', subs: null, icon: null },
 
         ]
       },
@@ -45,4 +46,5 @@ export class MenuMainOrangeComponent implements OnInit {
 
   }
 
+  // https://youtu.be/fFJH6dguuqo
 }
