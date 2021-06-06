@@ -31,9 +31,8 @@ import { MorphTekstinhoudComponent } from './components/morph-tekstinhoud/morph-
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MistTekstComponent } from './components/mist-tekst/mist-tekst.component';
-import { MenuMainComponent } from './components/menu-main/menu-main.component';
-import { MenuSubComponent } from './components/menu-main/menu-sub/menu-sub.component';
-import { MenuMainOrangeComponent } from './components/menu-main-orange/menu-main-orange.component';
+import {MenuMainOrangeComponent} from './components/menu-main-orange/menu-main-orange.component';
+// feature modules
 
 @NgModule({
   declarations: [
@@ -60,8 +59,6 @@ import { MenuMainOrangeComponent } from './components/menu-main-orange/menu-main
     AnimistaComponent,
     MorphTekstinhoudComponent,
     MistTekstComponent,
-    MenuMainComponent,
-    MenuSubComponent,
     MenuMainOrangeComponent
   ],
   imports: [
@@ -70,6 +67,10 @@ import { MenuMainOrangeComponent } from './components/menu-main-orange/menu-main
     ReactiveFormsModule,
     FwModule,
   ],
+  
+  // exports:[
+  //   MenuMainOrangeComponent
+  // ],
   providers: [
     ThemeService,
   ],
